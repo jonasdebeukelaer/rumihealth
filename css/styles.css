@@ -1,3 +1,9 @@
+body {
+	height: 100%;
+	width: 100%;
+	position: absolute;
+}
+
 .green {
 	background-color: #CED9DD;
 }
@@ -14,17 +20,35 @@
 	height: 5px;
 }
 
+
+.middle-container {
+	position: absolute;
+	left: 0;
+	right: 0;
+	top: 0;
+	bottom: 0;
+}
+
 .middle {
-	margin-top: 40%;
+	height: 100px;
+	width: 80%;
+	margin-left: auto;
+	margin-right: auto;
+	position: relative;
+	top: 50%;
+	transform: translateY(-50%);
 }
 
 .center {
 	text-align: center;
 }
 
-
 .spinner-container {
 	height: 20px;
 	padding-top: 20px;
 	padding-bottom: 10px;
+}
+
+.siimple-h3 {
+	font-size: 2em;
 }

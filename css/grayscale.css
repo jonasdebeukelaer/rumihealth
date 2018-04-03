@@ -119,6 +119,7 @@ a:focus, a:hover {
     padding-bottom: 10px;
     border-bottom: 1px solid rgba(255, 255, 255, 0.3);
     background: #dddddd;
+    opacity: 0.94;
   }
   #mainNav .nav-link.active {
     outline: none;
@@ -206,14 +207,12 @@ a:focus, a:hover {
 
 .download-section {
   color: white;
-  background: url("../img/cow-skin-bg.jpg") no-repeat center center scroll;
-  background-color: black;
+  /*background: url('../img/cow-skin-bg.jpg') no-repeat center center scroll;*/
+  background-color: #7db208;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
-  filter: contrast(80%);
-  /*-------------------- evnetually remove this */
 }
 
 #map {
@@ -314,4 +313,12 @@ img::-moz-selection {
 
 .obsalim-link :hover {
   color: white;
+}
+
+.list-inline-item {
+  padding-bottom: .7rem;
+}
+
+.intro-body > .container {
+  max-width: 1230px;
 }

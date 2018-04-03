@@ -1,6 +1,4 @@
 node_modules
-<<<<<<< HEAD
+.DS_Store
 .sass-cache
-=======
 bower_components
->>>>>>> master

@@ -1,5 +1,13 @@
 @import 'variables.scss';
 @import 'mixins.scss';
+
+@font-face {
+  font-family: 'airstream';
+  src: URL('../fonts/airstream.woff') format('woff'),
+       URL('../fonts/airstream.ttf') format('ttf');
+}
+
+
 body {
   font-family: 'Lora', 'Helvetica Neue', Helvetica, Arial, sans-serif;
 
@@ -77,7 +85,11 @@ a {
     border: 1px solid black;
   }
   .navbar-brand {
-    font-weight: 700;
+    font-size: 2.1rem;
+    font-weight: 400;
+    font-family: airstream, 'Cabin', 'Helvetica Neue', Helvetica;
+    text-transform: none;
+    padding: 0;
   }
   a {
     color: white;
@@ -324,6 +336,8 @@ img::-moz-selection {
   :hover {
     color: white;
   }
+
+  margin-bottom: 40px;
 }
 
 
@@ -333,6 +347,10 @@ img::-moz-selection {
 
 .intro-body > .container {
   max-width: 1230px;
+
+  p {
+    text-shadow: black 0px 0px 0.2px;
+  }
 }
 
 @media(max-width: 767px) {
@@ -341,4 +359,34 @@ img::-moz-selection {
   }
 }
 
+.obsalim-more {
+  color: white;
+  padding-bottom: 10px;
+  text-align: center;
+}
+
+#obsalim-text {
+  border-bottom: white solid 1px;
+}
+
+.collapse:not(.show) {
+  display: block;
+  height: 0px;
+  overflow: hidden;
+}
+
+.gradient {
+      background: linear-gradient(transparent,#7db208);
+    position: relative;
+    bottom: 140px;
+    width: 100%;
+    left: 0;
+    height: 140px;
+    margin-bottom: -140px;
+    transition: opacity 1s;
+}
+
+.hide-gradient {
+  opacity: 0;
+}
 

@@ -39,15 +39,15 @@
   // Collapse the navbar when page is scrolled
   $(window).scroll(navbarCollapse);
 
-  $("#expand-obsalim").click (function() {
-    console.log("wow!")
-    if ($("expand-obsalim").text().toLowerCase() === "read on") {
-      $("expand-obsalim").text("Collapse");
-      $("gradient").addClass("opacity-hide");
-    } else {
-      $("expand-obsalim").text("Read on");
-      $("gradient").removeClass("opacity-hide");
-    }
-  })
+  // $("#expand-obsalim").click (function() {
+  //   console.log("wow!")
+  //   if ($("#expand-obsalim").text().toLowerCase() == "read on") {
+  //     $("#expand-obsalim").text("Collapse");
+  //     $("#gradient").addClass("hide-gradient");
+  //   } else {
+  //     $("#expand-obsalim").text("Read on");
+  //     $("#gradient").removeClass("hide-gradient");
+  //   }
+  // })
 
 })(jQuery); // End of use strict

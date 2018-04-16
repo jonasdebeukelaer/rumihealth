@@ -4,9 +4,6 @@
 
 `gulp` to compile
 
-run following in gcloud
-```
-sudo nohup python3 http.server 80 &
-```
+`sudo nohup python3 http.server 80 &` to start simple python server to serve site
 
 using [Grayscale](https://startbootstrap.com/template-overviews/grayscale/) as a launch pad – thanks!

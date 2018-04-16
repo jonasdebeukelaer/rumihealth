@@ -37,18 +37,40 @@
 
   // Collapse now if page is not at top
   navbarCollapse();
-  
+
   // Collapse the navbar when page is scrolled
   $(window).scroll(navbarCollapse);
 
   $("#expand-obsalim").click (function() {
-    console.log("wow!")
     if ($("#expand-obsalim").text().toLowerCase() == "read on") {
       $("#expand-obsalim").text("Collapse");
       $("#gradient").addClass("hide-gradient");
     } else {
       $("#expand-obsalim").text("Read on");
       $("#gradient").removeClass("hide-gradient");
+      //smooth scroll stuff
+      // var target = $(this.hash);
+      // console.log("trying")
+      // target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+      // if (target.length) {
+      //   $('html, body').animate({
+      //     scrollTop: (target.offset().top - 70)
+      //   }, 1000, "easeInOutExpo", function () {
+      //     console.log("odifnsdofshdfjks")
+              
+      //   });
+      //   return false;
+      // }
+    }
+  })
+
+  $("#expand-courses").click (function() {
+    if ($("#expand-courses").text().toLowerCase() == "read on") {
+      $("#expand-courses").text("Collapse");
+      $("#gradient-white").addClass("hide-gradient");
+    } else {
+      $("#expand-courses").text("Read on");
+      $("#gradient-white").removeClass("hide-gradient");
     }
   })
 

@@ -33,6 +33,8 @@ h6 {
 p {
   font-size: 16px;
   line-height: 1.5;
+  text-align: left;
+  justify: left;
   margin: 0 0 25px;
 }
 
@@ -355,6 +357,10 @@ img::-moz-selection {
   border-bottom: white solid 1px;
 }
 
+#courses-text {
+  border-bottom: #7db208 solid 1px;
+}
+
 .collapse.obsalim-text:not(.show) {
   display: block;
   height: 0px;
@@ -372,6 +378,10 @@ img::-moz-selection {
   transition: opacity 1s, height 1s;
 }
 
+.gradient.white {
+  background: linear-gradient(transparent, white);
+}
+
 .hide-gradient {
   opacity: 0;
   z-index: -3;
@@ -379,4 +389,8 @@ img::-moz-selection {
 
 #expand-obsalim:hover {
   color: #385004;
+}
+
+.center-text {
+  text-align: center;
 }

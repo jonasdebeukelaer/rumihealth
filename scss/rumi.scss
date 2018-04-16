@@ -43,6 +43,8 @@ h6 {
 p {
   font-size: 16px;
   line-height: 1.5;
+  text-align: left;
+  justify: left;
 
   margin: 0 0 25px;
   @media(min-width: 768px) {
@@ -371,6 +373,10 @@ img::-moz-selection {
   border-bottom: white solid 1px;
 }
 
+#courses-text {
+  border-bottom: $primary solid 1px;
+}
+
 .collapse.obsalim-text:not(.show) {
   display: block;
   height: 0px;
@@ -386,6 +392,10 @@ img::-moz-selection {
     height: 140px;
     margin-bottom: -140px;
     transition: opacity 1s, height 1s;
+
+    &.white {
+      background: linear-gradient(transparent,white);
+    }
 }
 
 .hide-gradient {
@@ -395,5 +405,9 @@ img::-moz-selection {
 
 #expand-obsalim:hover {
   color: darken($primary, 20%);
+}
+
+.center-text {
+  text-align: center;
 }
 

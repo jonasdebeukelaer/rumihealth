@@ -9,4 +9,4 @@ run following in gcloud
 sudo nohup python3 http.server 80 &
 ```
 
-using [Start Bootstrap - Grayscale](https://startbootstrap.com/template-overviews/grayscale/) as a template – thanks!
+using [Grayscale](https://startbootstrap.com/template-overviews/grayscale/) as a launch pad – thanks!

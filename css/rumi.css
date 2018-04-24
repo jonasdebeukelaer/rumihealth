@@ -135,6 +135,13 @@ a:focus, a:hover {
     outline: none;
     background-color: rgba(255, 255, 255, 0.3);
   }
+  #mainNav.navbar-expand-lg .navbar-nav .dropdown-menu {
+    top: 54px;
+    transform: translateX(-19px);
+    background-color: #ddd;
+    border-radius: 0px;
+    border: none;
+  }
 }
 
 @media (max-width: 992px) {
@@ -392,4 +399,71 @@ img::-moz-selection {
 
 .center-text {
   text-align: center;
+}
+
+.dropdown-item.active, .dropdown-item:active {
+  background-color: rgba(255, 255, 255, 0.3);
+}
+
+ul:not(.banner-social-buttons) {
+  text-align: left;
+}
+
+@media (min-width: 992px) {
+  .news-image {
+    width: 100%;
+  }
+  .carousel-inner {
+    overflow-x: hidden;
+    overflow-y: -webkit-paged-y;
+  }
+  .carousel-caption {
+    bottom: -300px;
+    left: 5%;
+    right: 5%;
+    background-color: #dddddd;
+    opacity: 0.94;
+    color: black;
+  }
+  .carousel-caption h5, .carousel-caption p {
+    margin-right: 20px;
+    margin-left: 20px;
+  }
+  .carousel-caption h5 {
+    text-align: left;
+  }
+  .carousel-caption p {
+    font-size: 15px;
+    margin-bottom: 10px;
+  }
+  .carousel-caption a {
+    text-decoration: underline;
+    text-align: right;
+  }
+  .carousel-control-next, .carousel-control-prev {
+    bottom: auto;
+    top: 50px;
+    opacity: 1;
+  }
+  .carousel-control-next-icon, .carousel-control-prev-icon {
+    width: 25px;
+    height: 25px;
+  }
+  .carousel-indicators {
+    bottom: 0;
+  }
+}
+
+@media (max-width: 992px) {
+  .news-image {
+    max-width: 100%;
+  }
+  .carousel-caption {
+    bottom: -200px;
+    left: 1%;
+    right: 1%;
+    background-color: #dddddd;
+    opacity: 0.94;
+    color: black;
+  }
 }

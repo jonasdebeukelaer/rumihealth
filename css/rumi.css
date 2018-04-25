@@ -166,8 +166,6 @@ a:focus, a:hover {
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
-  filter: contrast(95%);
-  /*-------------------- eventually remove this */
 }
 
 .masthead .intro-body {
@@ -409,14 +407,16 @@ ul:not(.banner-social-buttons) {
   text-align: left;
 }
 
+.news-image {
+  max-width: 100%;
+}
+
+.carousel-inner {
+  overflow-x: hidden;
+  overflow-y: -webkit-paged-y;
+}
+
 @media (min-width: 992px) {
-  .news-image {
-    width: 100%;
-  }
-  .carousel-inner {
-    overflow-x: hidden;
-    overflow-y: -webkit-paged-y;
-  }
   .carousel-caption {
     bottom: -300px;
     left: 5%;
@@ -455,15 +455,25 @@ ul:not(.banner-social-buttons) {
 }
 
 @media (max-width: 992px) {
-  .news-image {
-    max-width: 100%;
-  }
   .carousel-caption {
-    bottom: -200px;
-    left: 1%;
-    right: 1%;
+    top: 180px;
+    height: 400px;
+    left: 2%;
+    right: 2%;
     background-color: #dddddd;
     opacity: 0.94;
     color: black;
+    overflow-y: scroll;
+  }
+  h5, p {
+    margin-right: 1%;
+    margin-left: 1%;
+  }
+  .d-none {
+    display: block !important;
+  }
+  section.content-section, section.download-section {
+    padding-top: 80px;
+    padding-bottom: 80px;
   }
 }

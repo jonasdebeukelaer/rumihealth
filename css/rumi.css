@@ -476,4 +476,7 @@ ul:not(.banner-social-buttons) {
     padding-top: 80px;
     padding-bottom: 80px;
   }
+  .carousel-control-next, .carousel-control-prev {
+    width: 10%;
+  }
 }

@@ -41,6 +41,14 @@
   // Collapse the navbar when page is scrolled
   $(window).scroll(navbarCollapse);
 
+// -------------------------------
+
+  // Hide dropdown when item within it is clicked
+  $(".dropdown-item").click(function() {
+    $(".dropdown.show").click();
+  });
+
+  // Expand/collapse obsalim content
   $("#expand-obsalim").click (function() {
     if ($("#expand-obsalim").text().toLowerCase() == "read on") {
       $("#expand-obsalim").text("Collapse");
@@ -64,6 +72,7 @@
     }
   })
 
+  // Expand/collapse courses content
   $("#expand-courses").click (function() {
     if ($("#expand-courses").text().toLowerCase() == "read on") {
       $("#expand-courses").text("Collapse");

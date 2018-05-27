@@ -428,14 +428,20 @@ ul:not(.banner-social-buttons) {
 }
 
 .news-image {
-    max-width: 100%;
+    position: absolute;
+    left: 0;
+    width: 100%;
 }
 
 .carousel-inner {
   overflow-x: hidden;
-  overflow-y: -webkit-paged-y;
+  overflow-y: visible;
 }
 
+.carousel-item {
+    height: 520px;
+    margin-bottom: 300px;
+  }
 
 @media (min-width: 992px) {
   
@@ -513,4 +519,28 @@ ul:not(.banner-social-buttons) {
   .carousel-control-next, .carousel-control-prev {
     width: 10%;
   }
+}
+
+.logo-circle {
+  background-color: white;
+  width: 400px;
+  height: 400px;
+  border-radius: 100%;
+  opacity: 0.9;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.logo-container {
+  z-index: 10;
+  margin-top: -400px;
+  width: 400px;
+  height: 400px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.logo {
+  width: 400px;
+  height: 400px;
 }

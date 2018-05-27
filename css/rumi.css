@@ -97,12 +97,12 @@ a:focus, a:hover {
 #mainNav .navbar-nav .nav-item:hover {
   color: #666666;
   outline: none;
-  background-color: transparent;
+  background-color: rgba(255, 255, 255, 0);
 }
 
 #mainNav .navbar-nav .nav-item:active, #mainNav .navbar-nav .nav-item:focus {
   outline: none;
-  background-color: transparent;
+  background-color: rgba(255, 255, 255, 0);
 }
 
 #mainNav .navbar-nav .nav-item a {
@@ -122,7 +122,7 @@ a:focus, a:hover {
     transition: background 0.3s ease-in-out, padding-top 0.3s ease-in-out, padding-bottom 0.3s;
     letter-spacing: 1px;
     border-bottom: none;
-    background: transparent;
+    background: rgba(255, 255, 255, 0);
   }
   #mainNav.navbar-shrink {
     padding-top: 10px;
@@ -209,7 +209,7 @@ a:focus, a:hover {
   color: white;
   border: 2px solid white;
   border-radius: 100% !important;
-  background: transparent;
+  background: rgba(255, 255, 255, 0);
 }
 
 .btn-circle:focus, .btn-circle:hover {
@@ -261,7 +261,7 @@ a:focus, a:hover {
 .btn-default {
   color: #7db208;
   border: 1px solid #7db208;
-  background-color: transparent;
+  background-color: rgba(255, 255, 255, 0);
 }
 
 .btn-default:focus, .btn-default:hover {
@@ -314,11 +314,11 @@ footer p {
 }
 
 img::selection {
-  background: transparent;
+  background: rgba(255, 255, 255, 0);
 }
 
 img::-moz-selection {
-  background: transparent;
+  background: rgba(255, 255, 255, 0);
 }
 
 /* ----------------------------------- */
@@ -372,7 +372,8 @@ img::-moz-selection {
 }
 
 .gradient {
-  background: linear-gradient(transparent, #7db208);
+  background: linear-gradient(rgba(125, 178, 8, 0), #7db208);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0, rgba(125, 178, 8, 0)), color-stop(100%, #7db208));
   position: relative;
   bottom: 140px;
   width: 100%;
@@ -383,7 +384,8 @@ img::-moz-selection {
 }
 
 .gradient.white {
-  background: linear-gradient(transparent, white);
+  background: linear-gradient(rgba(255, 255, 255, 0), white);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0, rgba(255, 255, 255, 0)), color-stop(100%, white));
 }
 
 .hide-gradient {

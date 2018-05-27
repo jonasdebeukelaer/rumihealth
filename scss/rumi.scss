@@ -106,12 +106,12 @@ a {
       &:hover {
         color: darken(white, 60%);
         outline: none;
-        background-color: transparent;
+        background-color: rgba(255,255,255,0);
       }
       &:active,
       &:focus {
         outline: none;
-        background-color: transparent;
+        background-color: rgba(255,255,255,0);
       }
 
       a {
@@ -133,7 +133,7 @@ a {
     letter-spacing: 1px;
 
     border-bottom: none;
-    background: transparent;
+    background: rgba(255,255,255,0);
     &.navbar-shrink {
       padding-top: 10px;
       padding-bottom: 10px;
@@ -227,7 +227,7 @@ a {
   color: white;
   border: 2px solid white;
   border-radius: 100% !important;
-  background: transparent;
+  background: rgba(255,255,255,0);
   &:focus,
   &:hover {
     color: white;
@@ -280,7 +280,7 @@ a {
 .btn-default {
   color: $primary;
   border: 1px solid $primary;
-  background-color: transparent;
+  background-color: rgba(255,255,255,0);
   &:focus,
   &:hover {
     color: black;
@@ -330,11 +330,11 @@ footer {
 }
 
 img::selection {
-  background: transparent;
+  background: rgba(255,255,255,0);
 }
 
 img::-moz-selection {
-  background: transparent;
+  background: rgba(255,255,255,0);
 }
 
 
@@ -392,7 +392,8 @@ img::-moz-selection {
 }
 
 .gradient {
-      background: linear-gradient(transparent,#7db208);
+    background: linear-gradient(rgba(125, 178, 8,0),#7db208);
+    background: -webkit-gradient(linear,left top,left bottom,color-stop(0,rgba(125, 178, 8,0)),color-stop(100%,#7db208));
     position: relative;
     bottom: 140px;
     width: 100%;
@@ -402,7 +403,8 @@ img::-moz-selection {
     transition: opacity 1s, height 1s;
 
     &.white {
-      background: linear-gradient(transparent,white);
+      background: linear-gradient(rgba(255,255,255,0),white);
+      background: -webkit-gradient(linear,left top,left bottom,color-stop(0,rgba(255,255,255,0)),color-stop(100%,white));
     }
 }
 

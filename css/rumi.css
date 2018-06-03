@@ -516,6 +516,7 @@ ul:not(.banner-social-buttons) {
     width: 100%;
   }
   .logo {
+    margin-top: -90px;
     width: 70%;
   }
   .logo-menu {

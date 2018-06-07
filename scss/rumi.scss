@@ -523,18 +523,17 @@ ul:not(.banner-social-buttons) {
   }
 }
 
-.logo-container {
-  margin-left: auto;
-  margin-right: auto;
+.logo {
+  position: relative;
 }
 
-@media (min-width: 992px) {
-  .logo-container {
-    width: 400px;
-  }
 
+@media (min-width: 992px) {
+  
   .logo {
-    width: 400px;
+    width: 175px;
+    top: 53px;
+    margin-right: -20px;
   }
 
   .logo-menu {
@@ -547,13 +546,10 @@ ul:not(.banner-social-buttons) {
 }
 
 @media (max-width: 992px) {
-  .logo-container {
-    width: 100%;
-  }
 
   .logo {
-    margin-top: -90px;
-    width: 70%;
+    width: 175px;
+    top: 20px;
   }
 
   .logo-menu {

@@ -27,6 +27,9 @@ h6 {
   font-weight: 700;
   margin: 0 0 35px;
   letter-spacing: 1px;
+}
+
+h1, h2 {
   text-transform: uppercase;
 }
 
@@ -55,6 +58,15 @@ a {
 a:focus, a:hover {
   text-decoration: none;
   color: #385004;
+}
+
+.download-section a {
+  text-decoration: underline;
+  color: white;
+}
+
+.download-section a:hover {
+  color: #cccccc;
 }
 
 #mainNav {
@@ -183,6 +195,7 @@ a:focus, a:hover {
 
 .masthead .intro-body .intro-text {
   font-size: 26px;
+  font-weight: 600;
 }
 
 @media (min-width: 768px) {
@@ -272,6 +285,10 @@ a:focus, a:hover {
   background-color: #7db208;
 }
 
+.btn-default span {
+  text-transform: none;
+}
+
 ul.banner-social-buttons {
   margin-top: 0;
 }
@@ -343,7 +360,7 @@ img::-moz-selection {
 }
 
 .intro-body > .container p {
-  text-shadow: #222222 0px 0px 0.2px;
+  text-shadow: #222222 0px 0px 1px;
 }
 
 @media (max-width: 767px) {
@@ -507,6 +524,9 @@ ul:not(.banner-social-buttons) {
     width: 55px;
     margin-top: -8px;
     margin-bottom: -8px;
+  }
+  .testimonial-video {
+    margin-top: -20px;
   }
 }
 

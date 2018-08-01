@@ -37,6 +37,9 @@ h6 {
   margin: 0 0 35px;
 
   letter-spacing: 1px;
+}
+
+h1, h2 {
   text-transform: uppercase;
 }
 
@@ -64,8 +67,15 @@ a {
   &:focus,
   &:hover {
     text-decoration: none;
-
     color: darken($primary, 20%);
+  }
+}
+
+.download-section a {
+  text-decoration: underline;
+  color: white;
+  &:hover {
+    color: darken(white, 20%);
   }
 }
 
@@ -197,6 +207,7 @@ a {
     }
     .intro-text {
       font-size: 26px;
+      font-weight: 600;
     }
   }
   @media(min-width:768px) {
@@ -289,6 +300,10 @@ a {
     outline: none;
     background-color: $primary;
   }
+
+  span {
+    text-transform: none;
+  }
 }
 
 ul.banner-social-buttons {
@@ -362,7 +377,7 @@ img::-moz-selection {
   max-width: 1230px;
 
   p {
-    text-shadow: #222222 0px 0px 0.2px;
+    text-shadow: #222222 0px 0px 1px;
   }
 }
 
@@ -543,6 +558,10 @@ ul:not(.banner-social-buttons) {
     width: 55px;
     margin-top: -8px;
     margin-bottom: -8px;
+  }
+
+  .testimonial-video {
+    margin-top: -20px;
   }
 }
 

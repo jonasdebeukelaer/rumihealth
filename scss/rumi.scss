@@ -214,7 +214,7 @@ a {
     }
     .intro-text {
       font-size: 26px;
-      font-weight: 600;
+      font-weight: 400;
     }
   }
   @media(min-width:768px) {
@@ -370,7 +370,7 @@ img::-moz-selection {
   max-width: 1230px;
 
   p {
-    text-shadow: #222222 0px 0px 1px;
+    text-shadow: #222222 0px 0px 3px;
   }
 }
 
@@ -432,7 +432,9 @@ img::-moz-selection {
 
 ul:not(.banner-social-buttons) {
   text-align: left;
+  font-size: 18px;
 }
+
 
 .news-image {
     position: absolute;

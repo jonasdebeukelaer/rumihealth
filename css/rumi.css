@@ -425,7 +425,12 @@ img::-moz-selection {
 
 ul:not(.banner-social-buttons):not(.navbar-nav) {
   text-align: left;
-  font-size: 18px;
+}
+
+@media (min-width: 900px) {
+  ul:not(.banner-social-buttons):not(.navbar-nav) {
+    font-size: 18px;
+  }
 }
 
 .news-image {

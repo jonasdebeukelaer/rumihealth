@@ -438,7 +438,10 @@ img::-moz-selection {
 
 ul:not(.banner-social-buttons):not(.navbar-nav) {
   text-align: left;
-  font-size: 18px;
+
+  @media(min-width: 900px) {
+    font-size: 18px;
+  }
 }
 
 

@@ -52,23 +52,10 @@
   $("#expand-obsalim").click (function() {
     if ($("#expand-obsalim").text().toLowerCase() == "read on") {
       $("#expand-obsalim").text("Collapse");
-      $("#gradient").addClass("hide-gradient");
+      $("#gradient-obsalim").addClass("hide-gradient");
     } else {
       $("#expand-obsalim").text("Read on");
-      $("#gradient").removeClass("hide-gradient");
-      //smooth scroll stuff
-      // var target = $(this.hash);
-      // console.log("trying")
-      // target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
-      // if (target.length) {
-      //   $('html, body').animate({
-      //     scrollTop: (target.offset().top - 70)
-      //   }, 1000, "easeInOutExpo", function () {
-      //     console.log("odifnsdofshdfjks")
-              
-      //   });
-      //   return false;
-      // }
+      $("#gradient-obsalim").removeClass("hide-gradient");
     }
   })
 
@@ -76,10 +63,10 @@
   $("#expand-courses").click (function() {
     if ($("#expand-courses").text().toLowerCase() == "read on") {
       $("#expand-courses").text("Collapse");
-      $("#gradient-white").addClass("hide-gradient");
+      $("#gradient-courses").addClass("hide-gradient");
     } else {
       $("#expand-courses").text("Read on");
-      $("#gradient-white").removeClass("hide-gradient");
+      $("#gradient-courses").removeClass("hide-gradient");
     }
   })
 

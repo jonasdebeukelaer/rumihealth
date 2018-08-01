@@ -386,12 +386,8 @@ img::-moz-selection {
   text-align: center;
 }
 
-#obsalim-text {
+#obsalim-text, #courses-text {
   border-bottom: white solid 1px;
-}
-
-#courses-text {
-  border-bottom: $primary solid 1px;
 }
 
 .collapse.obsalim-text:not(.show) {

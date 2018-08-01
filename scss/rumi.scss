@@ -71,11 +71,11 @@ a {
   }
 }
 
-.download-section a {
+.download-section a:not(.btn) {
   text-decoration: underline;
   color: white;
   &:hover {
-    color: darken(white, 20%);
+    color: darken($primary, 20%);
   }
 }
 
@@ -574,5 +574,9 @@ ul:not(.banner-social-buttons) {
 
   .logo-menu {
     display: none;
+  }
+
+  .testimonial-video {
+    width: 100%;
   }
 }

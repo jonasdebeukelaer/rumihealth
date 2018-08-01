@@ -60,13 +60,13 @@ a:focus, a:hover {
   color: #385004;
 }
 
-.download-section a {
+.download-section a:not(.btn) {
   text-decoration: underline;
   color: white;
 }
 
-.download-section a:hover {
-  color: #cccccc;
+.download-section a:not(.btn):hover {
+  color: #385004;
 }
 
 #mainNav {
@@ -537,5 +537,8 @@ ul:not(.banner-social-buttons) {
   }
   .logo-menu {
     display: none;
+  }
+  .testimonial-video {
+    width: 100%;
   }
 }

@@ -75,7 +75,7 @@ a {
   }
 }
 
-.download-section a:not(.btn) {
+.green-section:not(#news) a:not(.btn) {
   text-decoration: underline;
   color: white;
   &:hover {
@@ -260,14 +260,26 @@ a {
   padding-bottom: 120px;
 }
 
-.download-section, .contact-section {
+.green-section {
   color: white;
-  /*background: url('../img/cow-skin-bg.jpg') no-repeat center center scroll;*/
   background-color: $primary;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
+}
+
+.photo-section {
+  background: url('../img/judith-prins-sheep.jpg') no-repeat bottom center scroll;
+  height: 300px;
+
+  @media(min-width: 1199px) {
+    height: 450px;
+  }
+
+  @media(max-width: 900px) {
+    background: url('../img/judith-prins-sheep-phone.jpg') no-repeat bottom center scroll;
+  }
 }
 
 .btn {
@@ -351,12 +363,6 @@ img::-moz-selection {
 /* -----------ADDITIONS--------------- */
 /* ----------------------------------- */
 
-.obsalim-link, .contact-link {
-  color: white;
-  border-color: white;
-
-}
-
 .obsalim-link {
   margin-bottom: 40px;
 }
@@ -370,7 +376,7 @@ img::-moz-selection {
   max-width: 1230px;
 
   p {
-    text-shadow: #222222 0px 0px 3px;
+    text-shadow: #222222 0px 0px 2px;
   }
 }
 
@@ -387,7 +393,7 @@ img::-moz-selection {
 }
 
 #obsalim-text, #courses-text {
-  border-bottom: white solid 1px;
+  border-bottom: $primary solid 1px;
 }
 
 .collapse.obsalim-text:not(.show) {
@@ -430,7 +436,7 @@ img::-moz-selection {
   background-color: rgba(255,255,255,.3);
 }
 
-ul:not(.banner-social-buttons) {
+ul:not(.banner-social-buttons):not(.navbar-nav) {
   text-align: left;
   font-size: 18px;
 }
@@ -498,6 +504,14 @@ ul:not(.banner-social-buttons) {
   }
 }
 
+section.content-section:not(.green-section) a.btn.btn-link {
+    color: $primary;
+
+    &:hover {
+      color: darken($primary, 20%);
+    }
+}
+
 @media (max-width: 992px) {
 
   .carousel-caption {
@@ -520,7 +534,7 @@ ul:not(.banner-social-buttons) {
     display: block!important;
   }
 
-  section.content-section, section.download-section {
+  section.content-section {
     padding-top: 80px;
     padding-bottom: 80px;
   }
@@ -559,8 +573,8 @@ ul:not(.banner-social-buttons) {
 @media (max-width: 992px) {
 
   .logo {
-    width: 175px;
-    top: 20px;
+    width: 100px;
+    top: 33px;
   }
 
   .logo-menu {

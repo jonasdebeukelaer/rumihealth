@@ -64,12 +64,12 @@ a:focus, a:hover {
   color: #385004;
 }
 
-.download-section a:not(.btn) {
+.green-section:not(#news) a:not(.btn) {
   text-decoration: underline;
   color: white;
 }
 
-.download-section a:not(.btn):hover {
+.green-section:not(#news) a:not(.btn):hover {
   color: #385004;
 }
 
@@ -245,14 +245,30 @@ a:focus, a:hover {
   padding-bottom: 120px;
 }
 
-.download-section, .contact-section {
+.green-section {
   color: white;
-  /*background: url('../img/cow-skin-bg.jpg') no-repeat center center scroll;*/
   background-color: #7db208;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
+}
+
+.photo-section {
+  background: url("../img/judith-prins-sheep.jpg") no-repeat bottom center scroll;
+  height: 300px;
+}
+
+@media (min-width: 1199px) {
+  .photo-section {
+    height: 450px;
+  }
+}
+
+@media (max-width: 900px) {
+  .photo-section {
+    background: url("../img/judith-prins-sheep-phone.jpg") no-repeat bottom center scroll;
+  }
 }
 
 .btn {
@@ -335,11 +351,6 @@ img::-moz-selection {
 /* ----------------------------------- */
 /* -----------ADDITIONS--------------- */
 /* ----------------------------------- */
-.obsalim-link, .contact-link {
-  color: white;
-  border-color: white;
-}
-
 .obsalim-link {
   margin-bottom: 40px;
 }
@@ -353,7 +364,7 @@ img::-moz-selection {
 }
 
 .intro-body > .container p {
-  text-shadow: #222222 0px 0px 3px;
+  text-shadow: #222222 0px 0px 2px;
 }
 
 @media (max-width: 767px) {
@@ -369,7 +380,7 @@ img::-moz-selection {
 }
 
 #obsalim-text, #courses-text {
-  border-bottom: white solid 1px;
+  border-bottom: #7db208 solid 1px;
 }
 
 .collapse.obsalim-text:not(.show) {
@@ -412,7 +423,7 @@ img::-moz-selection {
   background-color: rgba(255, 255, 255, 0.3);
 }
 
-ul:not(.banner-social-buttons) {
+ul:not(.banner-social-buttons):not(.navbar-nav) {
   text-align: left;
   font-size: 18px;
 }
@@ -471,6 +482,14 @@ ul:not(.banner-social-buttons) {
   }
 }
 
+section.content-section:not(.green-section) a.btn.btn-link {
+  color: #7db208;
+}
+
+section.content-section:not(.green-section) a.btn.btn-link:hover {
+  color: #385004;
+}
+
 @media (max-width: 992px) {
   .carousel-caption {
     top: 180px;
@@ -489,7 +508,7 @@ ul:not(.banner-social-buttons) {
   .d-none {
     display: block !important;
   }
-  section.content-section, section.download-section {
+  section.content-section {
     padding-top: 80px;
     padding-bottom: 80px;
   }
@@ -522,8 +541,8 @@ ul:not(.banner-social-buttons) {
 
 @media (max-width: 992px) {
   .logo {
-    width: 175px;
-    top: 20px;
+    width: 100px;
+    top: 33px;
   }
   .logo-menu {
     display: none;

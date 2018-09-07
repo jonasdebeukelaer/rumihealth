@@ -23,7 +23,7 @@
   // Activate scrollspy to add active class to navbar items on scroll
   $('body').scrollspy({
     target: '#mainNav',
-    offset: 54
+    offset: 100
   });
 
   // Collapse Navbar
@@ -50,14 +50,18 @@
 
   // Expand/collapse obsalim content
   $("#expand-obsalim").click (function() {
-    if ($("#expand-obsalim").text().toLowerCase() == "read on") {
+    var collapsingObsalim = ($("#expand-obsalim").text().toLowerCase() == "collapse");
+    if (!collapsingObsalim) {
       $("#expand-obsalim").text("Collapse");
       $("#gradient-obsalim").addClass("hide-gradient");
     } else {
+      $("#menu-about-obsalim").click();
       $("#expand-obsalim").text("Read on");
       $("#gradient-obsalim").removeClass("hide-gradient");
     }
   })
+
+
 
   // Expand/collapse courses content
   $("#expand-courses").click (function() {
@@ -65,6 +69,7 @@
       $("#expand-courses").text("Collapse");
       $("#gradient-courses").addClass("hide-gradient");
     } else {
+      $("#menu-courses").click();
       $("#expand-courses").text("Read on");
       $("#gradient-courses").removeClass("hide-gradient");
     }

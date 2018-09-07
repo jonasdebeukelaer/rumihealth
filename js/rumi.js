@@ -4,16 +4,20 @@
   // Smooth scrolling using jQuery easing
   $('a.js-scroll-trigger[href*="#"]:not([href="#"])').click(function() {
     if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
-      var target = $(this.hash);
-      target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+      return smoothScroll(this.hash);
+    }
+  });
+
+  function smoothScroll(thisHash, callback) {
+      var target = $(thisHash);
+      target = target.length ? target : $('[name=' + thisHash.slice(1) + ']');
       if (target.length) {
         $('html, body').animate({
           scrollTop: (target.offset().top - 70)
-        }, 1000, "easeInOutExpo");
+        }, 1000, "easeInOutExpo", callback);
         return false;
       }
-    }
-  });
+  }
 
   // Closes responsive menu when a scroll trigger link is clicked
   $('.js-scroll-trigger').click(function() {
@@ -49,30 +53,37 @@
   });
 
   // Expand/collapse obsalim content
-  $("#expand-obsalim").click (function() {
-    var collapsingObsalim = ($("#expand-obsalim").text().toLowerCase() == "collapse");
-    if (!collapsingObsalim) {
-      $("#expand-obsalim").text("Collapse");
-      $("#gradient-obsalim").addClass("hide-gradient");
-    } else {
-      $("#menu-about-obsalim").click();
-      $("#expand-obsalim").text("Read on");
-      $("#gradient-obsalim").removeClass("hide-gradient");
-    }
+  $("#obsalim-text").on ("shown.bs.collapse", function(e) {
+    $("#expand-obsalim").text("Collapse");
+    $("#gradient-obsalim").addClass("hide-gradient");
   })
 
-
+  $("#obsalim-text").on ("hide.bs.collapse", function(e) {
+    collapseSection(e, "obsalim");
+  })
 
   // Expand/collapse courses content
-  $("#expand-courses").click (function() {
-    if ($("#expand-courses").text().toLowerCase() == "read on") {
-      $("#expand-courses").text("Collapse");
-      $("#gradient-courses").addClass("hide-gradient");
-    } else {
-      $("#menu-courses").click();
-      $("#expand-courses").text("Read on");
-      $("#gradient-courses").removeClass("hide-gradient");
-    }
+  $("#courses-text").on ("shown.bs.collapse", function(e) {
+    $("#expand-courses").text("Collapse");
+    $("#gradient-courses").addClass("hide-gradient");
   })
+
+  $("#courses-text").on ("hide.bs.collapse", function(e) {
+    collapseSection(e, "courses");
+  })
+
+    function collapseSection(event, section) {
+    //prevent infinite loop
+    var firstPass = ( $("#expand-" + section).text().toLowerCase() == "collapse" );
+
+    if (firstPass) {
+      event.preventDefault();
+      smoothScroll("#" + section, function() {
+        $("#expand-" + section).text("Read on");
+        $("#gradient-" + section).removeClass("hide-gradient");
+        $("#" + section + "-text").collapse('hide');
+      })
+    }
+  }
 
 })(jQuery); // End of use strict

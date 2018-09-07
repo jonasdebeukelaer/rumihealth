@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <%include src="partials/head.html"%>
+  </head>
+
+  <body id="page-top">
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
+      <div class="container">
+        <a class="navbar-brand js-scroll-trigger" href="#page-top">
+          <span>
+            <%include src="partials/logo-menu.html"%>
+              </span>
+          Ruminant Health Ltd
+        </a>
+        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+          Menu
+          <i class="fa fa-bars"></i>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="#about">About us</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Obsalim
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item js-scroll-trigger" href="#obsalim">About</a>
+                <a class="dropdown-item js-scroll-trigger" href="#news">In the news</a>
+              </div>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Courses
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item js-scroll-trigger" href="#courses">Courses</a>
+                <a class="dropdown-item js-scroll-trigger" href="#testimonials">Testimonials</a>
+              </div>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="#contact">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Intro Header -->
+    <header class="masthead">
+      <div class="intro-body">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-8 mx-auto">
+              
+              <h1 class="brand-heading">
+                <%include src="partials/logo.html"%>
+                Ruminant Health
+              </h1>
+              <p class="intro-text center-text"><span class="intro-text-title">OUR MISSION</span>
+                <br>Improving ruminant farming profitability and animal welfare through the Obsalim technique</p>
+              <a href="#about" class="btn btn-circle js-scroll-trigger">
+                <i class="fa fa-angle-double-down animated"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- About Ruminant Health Section -->
+    <section id="about" class="content-section text-center">
+      <%include src="partials/about.html"%>
+    </section>
+
+    <!-- Photo Section -->
+    <section id="#photo" class="photo-section">  
+    </section>
+
+    <!-- About Osalim Section -->
+    <section id="obsalim" class="content-section text-center">
+      <%include src="partials/obsalim.html"%>
+    </section>
+
+    <!-- News Section -->
+    <section id="news" class="green-section content-section content-section text-center">
+      <%include src="partials/news.html"%>
+    </section>
+
+        <!-- Courses Section -->
+    <section id="courses" class="content-section text-center">
+      <%include src="partials/courses.html"%>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="green-section content-section text-center">
+      <%include src="partials/testimonials.html"%>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact-section content-section text-center">
+      <%include src="partials/contact.html"%>
+    </section>
+
+    <!-- Footer -->
+    <footer class="green-section">
+      <div class="container text-center">
+        <p class="center-text">Copyright &copy; Ruminant Health Ltd</p>
+        <p class="center-text">Sheep Photo by Judith Prins on Unsplash</p>
+      </div>
+    </footer>
+
+    <!-- Bootstrap core JavaScript -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Plugin JavaScript -->
+    <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+
+    <!-- Custom scripts for this template -->
+    <script src="js/rumi.min.js"></script>
+
+  </body>
+
+</html>

@@ -599,7 +599,9 @@ section.content-section:not(.green-section) a.btn.btn-link {
 
 .img-obsalim-more {
   width: 70%;
-
+  &.narrow {
+    width: 60%;
+  }
 }
 
 .shadowed {

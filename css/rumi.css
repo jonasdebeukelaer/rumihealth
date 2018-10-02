@@ -568,6 +568,10 @@ section.content-section:not(.green-section) a.btn.btn-link:hover {
   width: 70%;
 }
 
+.img-obsalim-more.narrow {
+  width: 60%;
+}
+
 .shadowed {
   -webkit-filter: drop-shadow(12px 12px 25px rgba(0, 0, 0, 0.5));
   -ms-filter: "progid:DXImageTransform.Microsoft.Dropshadow(OffX=12, OffY=12, Color='#444')";
